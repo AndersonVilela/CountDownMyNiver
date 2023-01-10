@@ -45,10 +45,10 @@ export default {
         const minutes = Math.floor((distance % this._hours) / this._minutes);
         const seconds = Math.floor((distance % this._minutes) / this._seconds);
 
-        this.showDays = days < 10 ? "0" + days : days;
-        this.showHours = hours < 10 ? "0" + hours : hours;
-        this.showMinutes = minutes < 10 ? "0" + minutes: minutes;
-        this.showSeconds = seconds < 10 ? "0" + seconds : seconds;
+        this.showDays = days < 10 ? "0" + days.toString() : days.toString();
+        this.showHours = hours < 10 ? "0" + hours.toString() : hours.toString();
+        this.showMinutes = minutes < 10 ? "0" + minutes.toString: minutes.toString();
+        this.showSeconds = seconds < 10 ? "0" + seconds.toString : seconds.toString();
 
       }, 1000);
     }
